@@ -39,8 +39,8 @@ Sistem AI Assistant yang membantu mahasiswa memahami Pedoman Skripsi dengan meng
 ### 1. Clone Repository
 
 ```bash
-git clone <repository-url>
-cd rag-llm-assistant
+git clone https://github.com/kyyril/rag-thesis-assistant.git
+cd rag-thesis-assistant
 ```
 
 ### 2. Install Dependencies
@@ -119,6 +119,7 @@ curl -X POST "http://localhost:8000/api/v1/upload/guidelines" \
 ```
 
 Response:
+
 ```json
 {
   "success": true,
@@ -137,6 +138,7 @@ curl -X POST "http://localhost:8000/api/v1/upload/thesis" \
 ```
 
 Response:
+
 ```json
 {
   "success": true,
@@ -159,6 +161,7 @@ curl -X POST "http://localhost:8000/api/v1/chat" \
 ```
 
 Response:
+
 ```json
 {
   "answer": "Berdasarkan Pedoman Skripsi UIN Imam Bonjol Padang...",
@@ -268,6 +271,7 @@ Error: Invalid API key
 ```
 
 **Solusi:**
+
 1. Pastikan API key benar di file `.env`
 2. Cek quota API di Google AI Studio
 3. Pastikan API key memiliki akses ke Gemini Pro
@@ -279,6 +283,7 @@ Error: Could not connect to ChromaDB
 ```
 
 **Solusi:**
+
 1. Pastikan folder `data/chroma_db` exists
 2. Cek permission folder
 3. Restart aplikasi
@@ -290,6 +295,7 @@ Error: Could not extract text from PDF
 ```
 
 **Solusi:**
+
 1. Pastikan file adalah PDF valid
 2. Cek ukuran file (max 50MB)
 3. Coba dengan PDF yang tidak ter-password
@@ -301,6 +307,7 @@ Error: Memory allocation failed
 ```
 
 **Solusi:**
+
 1. Kurangi `MAX_CHUNK_SIZE`
 2. Kurangi `TOP_K_RETRIEVAL`
 3. Proses file lebih kecil
@@ -310,12 +317,14 @@ Error: Memory allocation failed
 ### Logs
 
 Aplikasi menyimpan logs di:
+
 - Console: Real-time logs
 - File: `logs/app.log` (rotasi harian)
 
 ### Metrics
 
 Akses `/api/v1/stats` untuk melihat:
+
 - Jumlah dokumen
 - Status koneksi
 - Performa system
@@ -362,6 +371,7 @@ MIT License - lihat file LICENSE untuk detail lengkap.
 ## 📞 Support
 
 Untuk pertanyaan atau bantuan:
+
 - Email: support@example.com
 - GitHub Issues: [Create Issue](https://github.com/username/repo/issues)
 

@@ -78,3 +78,10 @@
 2025-06-07 20:58:34 | INFO     | src.services.rag_service:process_question:53 - Retrieved 0 relevant chunks for question
 2025-06-07 20:58:34 | ERROR    | src.services.gemini_service:generate_simple_response:114 - Error generating simple response: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
 2025-06-07 20:58:34 | INFO     | main:lifespan:47 - Shutting down RAG LLM Assistant...
+2025-06-07 20:58:53 | INFO     | main:lifespan:38 - Starting RAG LLM Assistant...
+2025-06-07 20:58:53 | INFO     | main:lifespan:45 - Application started successfully
+2025-06-07 20:59:26 | INFO     | src.services.vector_store:search_similar_documents:120 - Found 0 similar documents for query
+2025-06-07 20:59:26 | INFO     | src.services.rag_service:process_question:53 - Retrieved 0 relevant chunks for question
+2025-06-07 21:00:00 | INFO     | src.services.pdf_processor:chunk_text:139 - Created 0 chunks from document
+2025-06-07 21:00:00 | ERROR    | src.services.vector_store:add_documents:76 - Error adding documents to vector store: list index out of range
+2025-06-07 21:00:00 | ERROR    | src.api.routes:upload_guidelines:101 - Error uploading guidelines: list index out of range
